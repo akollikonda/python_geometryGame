@@ -25,16 +25,16 @@ class Rectangle:
         self.highright=highRight
 
     def area(self):
-        l= self.lowleft.distance(Point(self.lowleft.x,self.highright.y))
-        w= self.highright.distance(Point(self.lowleft.x,self.highright.y))
+        l= self.lowleft.distance(Point(self.lowLeft.x,self.highRight.y))
+        w= self.highright.distance(Point(self.lowLeft.x,self.highRight.y))
         return l*w
 
     
 
 randomRectangle = Rectangle(Point(randint(1,10),randint(19,30)),Point(randint(10,20),randint(29,50)))
 
-#x = float(input("Enter X cordinate of point"))
-#y = float(input("Enter Y cordinate of point"))
+x = float(input("Enter X cordinate of point"))
+y = float(input("Enter Y cordinate of point"))
 
-#print(Point(x,y).fallsinrectangle(randomRectangle))
+print(Point(x,y).fallsinrectangle(randomRectangle))
 print("Area of rectangle = ",randomRectangle.area())

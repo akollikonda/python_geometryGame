@@ -25,8 +25,8 @@ class Rectangle:
         self.highright=highRight
 
     def area(self):
-        l= self.lowleft.distance(Point(self.lowleft.x,self.highright.y))
-        w= self.highright.distance(Point(self.lowleft.x,self.highright.y))
+        l= self.lowleft.distance(Point(self.lowLeft.x,self.highRight.y))
+        w= self.highright.distance(Point(self.lowLeft.x,self.highRight.y))
         return l*w
 
     

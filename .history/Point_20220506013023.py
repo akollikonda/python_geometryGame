@@ -1,5 +1,4 @@
 from random import randint
-from turtle import distance
 
 
 class Point:
@@ -23,18 +22,11 @@ class Rectangle:
     def __init__(self,lowLeft,highRight):
         self.lowleft = lowLeft
         self.highright=highRight
-
-    def area(self):
-        l= self.lowleft.distance(Point(self.lowleft.x,self.highright.y))
-        w= self.highright.distance(Point(self.lowleft.x,self.highright.y))
-        return l*w
-
     
 
-randomRectangle = Rectangle(Point(randint(1,10),randint(19,30)),Point(randint(10,20),randint(29,50)))
+randomRectangle = Rectangle(Point(randint(1,10),randint(19,30),Point(randint(10,20),randint(29,50))))
 
-#x = float(input("Enter X cordinate of point"))
-#y = float(input("Enter Y cordinate of point"))
+x = float(input("Enter X cordinate of point"))
+y = float(input("Enter Y cordinate of point"))
 
-#print(Point(x,y).fallsinrectangle(randomRectangle))
-print("Area of rectangle = ",randomRectangle.area())
+print(Point(x,y).fallsinrectangle(randomRectangle))
