@@ -1,5 +1,5 @@
 from random import randint
-import turtle
+from turtle import distance
 
 from pygments import highlight
 
@@ -48,10 +48,7 @@ class guiRectangle(Rectangle):
         turtle.done()
     
 
-randomRectangle = guiRectangle(Point(randint(1,10),randint(19,30)),Point(randint(10,20),randint(29,50)))
-myturtle =turtle.Turtle()
-
-randomRectangle.draw(canvas=myturtle)
+randomRectangle = Rectangle(Point(randint(1,10),randint(19,30)),Point(randint(10,20),randint(29,50)))
 
 #x = float(input("Enter X cordinate of point"))
 #y = float(input("Enter Y cordinate of point"))

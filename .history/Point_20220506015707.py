@@ -48,7 +48,7 @@ class guiRectangle(Rectangle):
         turtle.done()
     
 
-randomRectangle = guiRectangle(Point(randint(1,10),randint(19,30)),Point(randint(10,20),randint(29,50)))
+randomRectangle = guiRectangle(Point(randint(1,100),randint(190,300)),Point(randint(100,200),randint(290,500)))
 myturtle =turtle.Turtle()
 
 randomRectangle.draw(canvas=myturtle)
